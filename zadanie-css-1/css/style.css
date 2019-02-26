@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+header {
+    padding: 300px;
+    width: 100%;
+    background-image: url('../img/man-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+h1 {
+    font-size: 30px;
+    padding-top: 15px;
+}
+.header-text-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
