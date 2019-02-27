@@ -1,0 +1,117 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+.header {
+    flex-basis: 100%;
+    background-color: tomato;
+    padding: 20px;
+    order: 0;
+}
+.footer {
+    flex-basis: 100%;
+    background-color: blueviolet;
+    padding: 20px;
+    order: 4;
+}
+.main-article {
+    flex-basis: 50%;
+    text-align: center;
+    background-color: lightskyblue;
+    padding-bottom: 200px;
+    order: 2;
+}
+.aside-left {
+    flex-basis: 25%;
+    background-color: green;
+    order: 1;
+}
+.aside-right {
+    flex-basis: 25%;
+    background-color: pink;
+    order: 3;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        flex-basis: 100%;
+        background-color: tomato;
+        padding: 20px;
+        order: 0;
+        
+
+    }
+    .footer {
+        flex-basis: 100%;
+        background-color: blueviolet;
+        padding: 20px;
+        order: 4;
+        
+    }
+    .main-article {
+        flex-basis: 75%;
+        text-align: center;
+        background-color: lightskyblue;
+        padding-bottom: 200px;
+        order: 1;
+
+    }
+    .aside-left {
+        flex-basis: 100%;
+        background-color: green;
+        order: 3;
+        padding-bottom: 300px;
+    }
+    .aside-right {
+        flex-basis: 25%;
+        background-color: pink;
+        order: 2;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        flex-basis: 100%;
+        background-color: tomato;
+        /* padding-bottom: 10px; */
+        order: 0;
+        
+
+    }
+    .footer {
+        flex-basis: 100%;
+        background-color: blueviolet;
+        /* padding-bottom: 200px; */
+        order: 4;
+        
+    }
+    .main-article {
+        flex-basis: 100%;
+        text-align: center;
+        background-color: lightskyblue;
+        padding-bottom: 200px;
+        order: 1;
+
+    }
+    .aside-left {
+        flex-basis: 100%;
+        background-color: green;
+        order: 2;
+        padding-bottom: 200px;
+    }
+    .aside-right {
+        flex-basis: 100%;
+        background-color: pink;
+        order: 3;
+        padding-bottom: 200px;
+        
+    }
+}
